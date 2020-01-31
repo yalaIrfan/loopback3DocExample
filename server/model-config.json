@@ -38,5 +38,13 @@
   "CoffeeShop": {
     "dataSource": "pdb",
     "public": true
+  },
+  "Review": {
+    "dataSource": "pdb",
+    "public": true
+  },
+  "Reviewer": {
+    "dataSource": "pdb",
+    "public": true
   }
 }

@@ -1,12 +1,16 @@
+'use strict';
+
 module.exports = async function (app) {
-    try {
-        let models = Object.keys(app.models)
-        for (let model of models)
-            await app.dataSources.pdb.automigrate(model)
+
+    let models = Object.keys(app.models)
+    for (let model of models) {
+        // if (model != 'User')
+        await app.dataSources.pdb.autoupdate(model)
+        // else
+        // await app.dataSources.redis.automigrate(model)
     }
-    catch (err) {
-        console.error(err)
-    }
+
+
 };
 
 
