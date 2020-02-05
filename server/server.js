@@ -29,11 +29,17 @@ app.start = function () {
 boot(app, __dirname, function (err) {
   if (err) throw err;
 
-  
-  
   app.use('/express-status', function (req, res) {
     res.json({ 'IamRunnig': true })
   })
+  
+  // app.get('*', (req, res) => {
+  //   // console.log(path.join(__dirname, 'index.html'))
+  //   // res.sendFile(path.join(__dirname, 'index.html'))
+  //   res.sendFile('D:/Learning/loopback-tutorial/coffeeShop\client\dist\coffee-shop-front\index.html')
+  // })
+  
+  
   // start the server if `$ node server.js`
   if (require.main === module)
     app.start();
