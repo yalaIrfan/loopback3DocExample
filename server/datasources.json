@@ -4,13 +4,12 @@
     "connector": "memory"
   },
   "pdb": {
-    "host": "localhost",
+    "host": "ec2-54-246-90-10.eu-west-1.compute.amazonaws.com",
     "port": 5432,
-    "url": "",
-    "database": "pdb",
-    "password": "admin",
+    "database": "de745jd8ntna9c",
+    "password": "8ad9fde70448dbd283a4cff68b951ac14cab556f2bab1e8dc73088e76beb72bc",
     "name": "pdb",
-    "user": "postgres",
+    "user": "wyvyasnfwmfxpk",
     "connector": "postgresql"
   }
 }
